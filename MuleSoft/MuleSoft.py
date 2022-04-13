@@ -10,9 +10,15 @@ def sqlinsert():
     query1="Insert into Movies values('James','Puneeth Rajkumar','Priya Anand','Chetan Kumar','2022');"
     query2="Insert into Movies values('Intestellar','Matthew McConaughey','Anne Hathway','Christopher Nolan','2014');"
     query3="Insert into Movies values('The Batman','Robert Pattinson','Salina Kyle','Matt reeves','2022');"
+    query4="Insert into Movies values('The Lighthouse','Robert Pattinson','Valeriia','Robert Eggers','2019');"
+    query5="Insert into Movies values('Tenet','Robert Pattinson','Elizabeth','Christopher Nolan','2021');"
+    query6="Insert into Movies values('Twilight','Robert Pattinson','Kristen','Catherine Hardwicke','2008');"
     cur.execute(query1)
     cur.execute(query2)
     cur.execute(query3)
+    cur.execute(query4)
+    cur.execute(query5)
+    cur.execute(query6)
     sqliteConnection.commit()
 def sqlselect():
     sqliteConnection=sqlite3.connect("sql.db")
